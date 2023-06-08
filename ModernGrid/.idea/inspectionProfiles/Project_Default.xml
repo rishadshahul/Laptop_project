@@ -1,0 +1,36 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N801" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="str.tilte" />
+          <option value="myapp.urls" />
+          <option value="myapp.views.savefunction" />
+          <option value="myapp.views.myfunction" />
+          <option value="myapp.views.displaycategory" />
+          <option value="myapp.views.categorysave" />
+          <option value="myapp.views.addcategory" />
+          <option value="myapp.views.editcategory" />
+          <option value="myapp.views.indexpage" />
+          <option value="myapp.views.updatecategory" />
+          <option value="myapp.views.deletecategory" />
+          <option value="myapp.views.addproduct" />
+          <option value="myapp.views.displayproduct" />
+          <option value="myapp.views.productsave" />
+          <option value="myapp.views.editproduct" />
+          <option value="myapp.views.updateproduct" />
+          <option value="myapp.views.deletproduct" />
+          <option value="myapp.views.loginindex" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

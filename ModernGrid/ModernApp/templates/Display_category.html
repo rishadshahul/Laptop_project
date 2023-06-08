@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% extends 'indexpage.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Category Table</h5>
+          <div class="table-responsive">
+           <table class="table">
+              <thead>
+                <tr>
+
+                  <th scope="col">Category Name</th>
+                  <th scope="col">Image</th>
+                  <th scope="col">Option</th>
+
+                </tr>
+              </thead>
+              <tbody>
+               <tr>
+                    {% for i in data %}
+
+                      <td>{{i.cateName}}</td>
+                      <td class="py-1">
+                    <form >
+
+                      <img  src="{{i.cateImage.url}}" alt="image" width="80px" height="70px" /></form></td>
+
+                   <form action="{% url 'EditCategory' dataid=i.id %}">
+                    <td>
+                        <button type="submit" class="btn btn-dark">Edit</button>
+
+                    </td>
+                   </form>
+
+                    <form action="{% url 'deleteCategory' dataid=i.id %}">
+                        <td>
+                         <button type="submit" class="btn btn-dark">Delete</button>
+                        </td>
+                    </form>
+
+
+               </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+        </div>
+        </div>
+      </div>
+</body>
+</html>
+{% endblock %}
